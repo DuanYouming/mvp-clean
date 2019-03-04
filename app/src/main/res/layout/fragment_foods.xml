@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".food.view.FoodsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:background="@drawable/bg_inside_section"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <FrameLayout
+            android:id="@+id/vegetable_section"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_inside_section_btn">
+
+            <TextView
+                android:id="@+id/text_vegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="17dp"
+                android:drawableStart="@drawable/ic_vegetable_crisper_normal"
+                android:gravity="center_vertical"
+                android:text="@string/store_area_vegetable"
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fridge_section"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_inside_section_btn">
+
+            <TextView
+                android:id="@+id/text_fridge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="17dp"
+                android:drawableStart="@drawable/ic_fridge_section_normal"
+                android:gravity="center_vertical"
+                android:text="@string/store_area_fridge"
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/freezer_section"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_inside_section_btn">
+
+            <TextView
+                android:id="@+id/text_freezer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="17dp"
+                android:drawableStart="@drawable/ic_freezer_section_normal"
+                android:gravity="center_vertical"
+                android:text="@string/store_area_freezer"
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginTop="214dp"
+        android:layout_marginBottom="126dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="210dp"
+            android:background="@drawable/bg_add_food"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+</FrameLayout>

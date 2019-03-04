@@ -1,0 +1,40 @@
+<resources>
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+        <attr name="autoTurningTime" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="VolumeSeekBar">
+        <attr name="trackWidth" format="integer" />
+        <attr name="trackHeight" format="integer" />
+        <attr name="thumbSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingIconView">
+        <attr name="title" format="string" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberStringPicker">
+        <attr name="textSize" format="integer" />
+        <attr name="focusTextSize" format="integer" />
+        <attr name="hideBoundaryLine" format="boolean" />
+        <attr name="contentGravity">
+            <flag name="center_horizontal" value="1" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <include
+        android:id="@+id/status_bar"
+        layout="@layout/layout_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top" />
+
+    <include
+        android:id="@+id/tools_bar"
+        layout="@layout/layout_tools_bar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_below="@+id/status_bar" />
+
+    <com.foxconn.bandon.messages.view.MemoPanel
+        android:id="@+id/message_board"
+        android:layout_width="match_parent"
+        android:layout_height="1170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/tools_bar"/>
+
+    <include
+        android:id="@+id/apps"
+        android:layout_width="700dp"
+        android:layout_height="460dp"
+        android:layout_below="@+id/message_board"
+        layout="@layout/layout_apps"/>
+    <include
+        android:id="@+id/jd_banner"
+        android:layout_width="366dp"
+        android:layout_height="173dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/message_board"
+        layout="@layout/layout_jd_banner"/>
+    <include
+        android:id="@+id/timer"
+        layout="@layout/layout_timer"
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/jd_banner"/>
+<!--    <include
+        layout="@layout/layout_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_alignParentBottom="true" />-->
+
+</RelativeLayout>

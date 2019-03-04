@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.foxconn.bandon.custom.SingleOptionViewGroup
+        android:id="@+id/power_saving_options"
+        android:layout_width="310dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/bg_settings_tracker_big">
+
+        <com.foxconn.bandon.custom.SingleOptionThumb
+            android:id="@+id/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_settings_tracker_btn" />
+
+        <com.foxconn.bandon.custom.SingleOptionView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/power_saving_off"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <com.foxconn.bandon.custom.SingleOptionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/power_saving_on"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </com.foxconn.bandon.custom.SingleOptionViewGroup>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/power_saving_options"
+        android:scaleType="centerInside"
+        android:src="@drawable/power_saving_text"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

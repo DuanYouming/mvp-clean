@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="672dp"
+        android:layout_height="1100dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="281dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="427dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_settings_title"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="48sp" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="330dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/btn_close"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

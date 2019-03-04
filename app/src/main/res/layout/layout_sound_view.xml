@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:volumeSeekBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:focusable="true"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:layout_centerHorizontal="true"
+        android:text="聲音控制"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="57dp"
+        android:paddingEnd="57dp"
+        android:layout_marginTop="288dp"
+        android:animateLayoutChanges="true">
+
+        <FrameLayout
+            android:id="@+id/is_silence_container"
+            android:layout_height="122dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="靜音模式"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <com.foxconn.bandon.custom.StatusSwitch
+                android:id="@+id/is_silence"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32dp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_height="122dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_item_background"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="36dp"
+                android:text="音量"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <com.foxconn.bandon.custom.VolumeSeekBar
+                android:id="@+id/volume_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="209dp"
+                volumeSeekBar:thumbSize="61"
+                volumeSeekBar:trackHeight="4"
+                volumeSeekBar:trackWidth="600" />
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="147dp"
+                android:src="@drawable/volumn_down"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="27dp"
+                android:src="@drawable/volumn_up"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ringtone_container"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:background="@drawable/bg_item_background"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginStart="33dp"
+                android:text="鈴聲"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp"  />
+
+            <TextView
+                android:id="@+id/ringtone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/setting_time_enable"
+                android:textSize="30dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ringtone_recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="543dp"
+                android:layout_marginTop="121dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="228dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="65dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="36sp"
+                android:background="@drawable/btn_green_border_rounded"
+                android:textColor="@drawable/btn_green_text"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="248dp"
+                android:layout_marginBottom="65dp"
+                android:gravity="center"
+                android:text="確定"
+                android:textSize="36sp"
+                android:background="@drawable/btn_green_solid_rounded"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="133dp"
+        android:layout_height="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="269dp"
+        android:background="@drawable/btn_close" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+	"recipes": [{
+			"name": "东坡肉",
+			"path": "Dongpo_Pork.mp4"
+		},
+		{
+			"name": "白灼基围虾",
+			"path": "Shrimps.mp4"
+		},
+		{
+			"name": "鲍汁西兰花",
+			"path": "Broccoli.mp4"
+		},
+		{
+			"name": "虫草花鸡汤",
+			"path": "Cordyceps_Chicken.mp4"
+		},
+		{
+			"name": "红焖猪蹄",
+			"path": "Braised_Pig_Feet.mp4"
+		},
+		{
+			"name": "黄椒酱蒸鲈鱼",
+			"path": "Steamed_Bass.mp4"
+		},
+		{
+			"name": "咖喱牛腩",
+			"path": "Curry_Beef_Brisket.mp4"
+		},
+		{
+			"name": "清炒山药",
+			"path": "Stir_Fried_Yam.mp4"
+		},
+		{
+			"name": "沙茶鸭块",
+			"path": "Duck_Block.mp4"
+		},
+		{
+			"name": "鲜芦笋百合炒虾仁",
+			"path": "Stir_Fried_Shrimp.mp4"
+		},
+		{
+			"name": "支竹牛腩",
+			"path": "Bean_Curd_Stick_Sirloin.mp4"
+		}
+	]
+}

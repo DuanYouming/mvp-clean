@@ -1,0 +1,86 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\workspace\\Android\\bandon\\android-extend\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\workspace\\Android\\bandon\\android-extend\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "456",
+                        "endColumns": "60",
+                        "endOffsets": "512"
+                    }
+                },
+                {
+                    "source": "E:\\workspace\\Android\\bandon\\android-extend\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "5,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "517,808",
+                        "endLines": "11,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "803,963"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\workspace\\Android\\bandon\\android-extend\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\workspace\\Android\\bandon\\android-extend\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "456",
+                        "endColumns": "60",
+                        "endOffsets": "512"
+                    }
+                },
+                {
+                    "source": "E:\\workspace\\Android\\bandon\\android-extend\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "5,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "517,808",
+                        "endLines": "11,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "803,963"
+                    }
+                }
+            ]
+        }
+    ]
+}

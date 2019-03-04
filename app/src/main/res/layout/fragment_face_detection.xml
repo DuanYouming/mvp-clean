@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".detection.FaceDetectionFragment">
+
+    <FrameLayout
+        android:id="@+id/surface_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="1600dp">
+
+        <com.guo.android_extend.widget.CameraSurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <com.guo.android_extend.widget.CameraGLSurfaceView
+            android:id="@+id/gl_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/icon"
+        android:layout_width="200dp"
+        android:layout_height="320dp"
+        android:layout_margin="40dp"
+        android:layout_below="@+id/surface_view_container"
+        android:layout_gravity="center_vertical"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="0px">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#979797">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:background="@drawable/ic_default_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/check_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surface_view_container"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/text_cue_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_result"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+    <TextView
+        android:text="@string/user_name"
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_cue_words"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+</RelativeLayout>

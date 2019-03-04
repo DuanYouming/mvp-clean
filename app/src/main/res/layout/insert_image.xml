@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="952dp"
+        android:layout_height="1209dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="182dp"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="13dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="#4BC88C"
+                android:checkedButton="@id/emotion_btn"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <RadioButton
+                    android:id="@+id/emotion_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="表情"
+                    android:textColor="@color/image_type_button"
+                    android:textSize="32sp" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="圖片"
+                    android:textColor="@color/image_type_button"
+                    android:textSize="32sp" />
+            </RadioGroup>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="100dp"
+                android:paddingLeft="86dp"
+                android:paddingRight="86dp"
+                android:paddingTop="49dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="141dp">
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="260dp"
+            android:layout_height="92dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="248dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#4BC88C"
+            android:textSize="36sp" />
+
+
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:layout_width="260dp"
+            android:layout_height="92dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="248dp"
+            android:background="@drawable/confirm_border"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

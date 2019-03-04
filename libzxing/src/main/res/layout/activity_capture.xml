@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/capture_mask_top"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shadow"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_below="@+id/capture_mask_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="扫描二维码"
+                android:background="@drawable/shadow"
+                android:textColor="#ffffff"
+                android:textSize="64dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/capture_mask_middle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/title_bar"
+            android:background="@drawable/shadow"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_view"
+            android:layout_width="966dp"
+            android:layout_height="966dp"
+            android:layout_below="@id/capture_mask_middle"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_member_scan_frame">
+
+            <ImageView
+                android:id="@+id/capture_scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/scan_line"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capture_crop_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="将二维码放入取景框内，即可自动扫描"
+            android:textSize="30sp"
+            android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/capture_mask_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/capture_mask_middle"
+            android:layout_toStartOf="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/capture_mask_middle"
+            android:layout_toEndOf="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</RelativeLayout>

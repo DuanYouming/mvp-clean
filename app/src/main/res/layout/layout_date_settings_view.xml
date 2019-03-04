@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:numberStringPicker="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:text="時間 / 日期"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="288dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:paddingLeft="57dp"
+        android:paddingRight="57dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="24小時制"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <com.foxconn.bandon.custom.StatusSwitch
+                android:id="@+id/is_format_24"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="自動設置"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <com.foxconn.bandon.custom.StatusSwitch
+                android:id="@+id/is_auto_time"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/timezone_container"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="時區"
+                android:textColor="#5C5C5C"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/timezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32dp"
+                android:textColor="#5C5C5C"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/timezone_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_item_mask"
+                android:focusable="true"
+                android:clickable="true" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/timezone_edit_container"
+            android:layout_width="match_parent"
+            android:layout_height="1232dp"
+            android:layout_marginBottom="68dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_item_background"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="35dp"
+                android:text="時區"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/timezone_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="142dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="121dp"
+                android:scrollbarSize="40dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/timezone_edit_btn_confirm"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="53dp"
+                android:background="@drawable/btn_green_solid_rounded"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/date_container"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="日期"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32dp"
+                android:textColor="#4A4A4A"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/date_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_item_mask"
+                android:focusable="true"
+                android:clickable="true" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/date_edit_container"
+            android:layout_width="match_parent"
+            android:layout_height="563dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="35dp"
+                android:text="日期"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="246dp"
+                android:layout_marginStart="227dp"
+                android:layout_marginTop="117dp"
+                android:orientation="horizontal">
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/date_year"
+                    android:layout_width="144dp"
+                    android:layout_height="234dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/date_month"
+                    android:layout_width="205dp"
+                    android:layout_height="234dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/date_day"
+                    android:layout_width="144dp"
+                    android:layout_height="234dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/date_edit_btn_cancel"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="68dp"
+                android:layout_marginStart="229dp"
+                android:background="@drawable/btn_green_border_rounded"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@drawable/btn_green_text"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/date_edit_btn_confirm"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="68dp"
+                android:layout_marginEnd="247dp"
+                android:background="@drawable/btn_green_solid_rounded"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/hour_min_container"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="33dp"
+                android:text="時間"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="32sp"
+                android:textColor="#61AEEF"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/time_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_item_mask"
+                android:focusable="true"
+                android:clickable="true" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/time_edit_container"
+            android:layout_width="match_parent"
+            android:layout_height="533dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/bg_item_background"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="35dp"
+                android:text="時間"
+                android:textColor="#4A4A4A"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:id="@+id/hour_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="251dp"
+                android:layout_marginStart="227dp"
+                android:layout_marginTop="74dp"
+                android:orientation="horizontal">
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/time_midnight"
+                    android:layout_width="130dp"
+                    android:layout_height="249dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/time_hour"
+                    android:layout_width="228dp"
+                    android:layout_height="249dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/time_min"
+                    android:layout_width="130dp"
+                    android:layout_height="249dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/hour_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="368dp"
+                android:layout_marginStart="303dp"
+                android:layout_marginTop="74dp"
+                android:orientation="horizontal">
+
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/time_hour_24"
+                    android:layout_width="147dp"
+                    android:layout_height="249dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+
+                <com.foxconn.bandon.custom.NumberStringPicker
+                    android:id="@+id/time_min_24"
+                    android:layout_width="147dp"
+                    android:layout_height="249dp"
+                    numberStringPicker:focusTextSize="36"
+                    numberStringPicker:hideBoundaryLine="false"
+                    numberStringPicker:textSize="36" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/time_edit_btn_cancel"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="103dp"
+                android:layout_marginStart="228dp"
+                android:background="@drawable/btn_green_border_rounded"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@drawable/btn_green_text"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/time_edit_btn_confirm"
+                android:layout_width="196dp"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="103dp"
+                android:layout_marginEnd="248dp"
+                android:background="@drawable/btn_green_solid_rounded"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="133dp"
+        android:layout_height="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="269dp"
+        android:background="@drawable/btn_close"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

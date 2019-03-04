@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".recipe.view.RecipeFragment">
+
+    <com.foxconn.bandon.custom.SearchEditView
+        android:id="@+id/search_view"
+        android:layout_width="992dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/ic_recipe_title"
+        android:textColor="#4BC88C"
+        android:textSize="40sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="130dp"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/exception_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="查無對應食譜"
+            android:textSize="36sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#4BC88C"
+            app:tabTextAppearance="@style/RecipeTabText"
+            app:tabTextColor="#4A4A4A" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/recipe_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

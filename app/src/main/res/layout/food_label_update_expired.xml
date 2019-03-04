@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="953dp"
+        android:layout_height="1060dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        card_view:cardCornerRadius="30sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="68dp"
+            android:includeFontPadding="false"
+            android:text="保存期限"
+            android:textColor="#4A4A4A"
+            android:textSize="60sp" />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:mcv_leftArrowMask="@drawable/ic_btn_month_back"
+            card_view:mcv_rightArrowMask="@drawable/ic_btn_month_next"
+            card_view:mcv_weekDayLabels="@array/custom_weekdays"
+            card_view:mcv_weekDayTextAppearance="@style/CalendarTextStyle"
+            card_view:mcv_dateTextAppearance="@style/CalendarTextStyle"
+            card_view:mcv_headerTextAppearance="@style/CalendarTextStyle"
+            card_view:mcv_titleAnimationOrientation="horizontal"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="146dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1470dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_green_text"
+            android:textSize="36sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green_solid_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="確定"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

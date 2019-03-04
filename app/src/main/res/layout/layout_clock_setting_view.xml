@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000">
+
+  <RelativeLayout
+      android:id="@+id/main_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="114dp"
+          android:text="鬧鐘"
+          android:textColor="@android:color/white"
+          android:textSize="48sp" />
+
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/alarm_recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="1140dp"
+          android:layout_marginEnd="57dp"
+          android:layout_marginStart="57dp"
+          android:layout_marginTop="287dp" />
+
+      <RelativeLayout
+          android:id="@+id/no_records"
+          android:layout_width="match_parent"
+          android:layout_height="1140dp"
+          android:layout_marginEnd="57dp"
+          android:layout_marginStart="57dp"
+          android:layout_marginTop="287dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_gravity="center"
+              android:text="沒有鬧鐘記錄，請添加！"
+              android:textColor="#B2B2B2"
+              android:textSize="36sp" />
+
+      </RelativeLayout>
+
+
+      <TextView
+          android:id="@+id/btn_add"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="831dp"
+          android:layout_marginTop="128dp"
+          android:text="新增鬧鐘 +"
+          android:textColor="@android:color/white"
+          android:textSize="36sp" />
+
+      <ImageView
+          android:id="@+id/btn_close"
+          android:layout_width="133dp"
+          android:layout_height="132dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="269dp"
+          android:background="@drawable/btn_close"
+          tools:ignore="ContentDescription" />
+  </RelativeLayout>
+
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/clock_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

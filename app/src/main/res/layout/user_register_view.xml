@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/ic_account_back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="124dp"
+        android:text="家庭成員"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <FrameLayout
+        android:layout_width="849dp"
+        android:layout_height="849dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/bg_setting_content_container">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="258dp"
+            android:layout_height="258dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="126dp"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="0px">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#979797">
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="629dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="473dp"
+            android:background="@drawable/bg_item_edit_member_input">
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:hint="请输入姓名"
+                android:maxLength="10"
+                android:textColorHint="#C7C7C7"
+                android:textSize="38sp"
+                tools:ignore="TextFields" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="69dp"
+            android:layout_marginStart="126dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="93dp"
+            android:paddingRight="93dp"
+            android:paddingTop="21dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_green_text"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="69dp"
+            android:layout_marginEnd="126dp"
+            android:background="@drawable/btn_green_solid_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="93dp"
+            android:paddingRight="93dp"
+            android:paddingTop="21dp"
+            android:text="確定"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+    </FrameLayout>
+</FrameLayout>

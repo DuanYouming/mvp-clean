@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- background / progress -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_settings_tracker_round"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0px"
+            android:src="@drawable/bg_settings_tracker_round_circle"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/progress_bar"
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:background="#4AABFE" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_settings_tracker_round_shadow"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <!-- thumb -->
+    <FrameLayout
+        android:id="@+id/thumb_moving_area"
+        android:layout_width="460dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="-7px">
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_thumb_round_button"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+</merge>

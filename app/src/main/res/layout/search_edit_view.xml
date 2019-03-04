@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bar_background"
+    android:orientation="horizontal"
+    android:paddingStart="37dp"
+    android:paddingEnd="23dp">
+
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_search_bar_search"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/search_icon"
+        android:background="#00000000"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="42sp"
+        tools:ignore="LabelFor,RelativeOverlap" />
+
+
+    <ImageView
+        android:id="@+id/voice_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_voice"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/text_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#4A4A4A"
+                android:textSize="60sp" />
+
+            <ImageView
+                android:id="@+id/image_update_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_edit_food_name"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/container_icon"
+            android:layout_width="847dp"
+            android:layout_height="498dp"
+            android:layout_below="@+id/container_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            card_view:cardCornerRadius="50dp"
+            card_view:cardElevation="0px">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
+
+            <ImageView
+                android:id="@+id/image_item_icon"
+                android:layout_width="847dp"
+                android:layout_height="498dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/container_create_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="標籤日期："
+                android:textColor="#626262"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/text_created_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#626262"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_expiration_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_create_date"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:text="保質期："
+                android:textColor="#626262"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/expire_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#626262"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_below="@+id/container_expiration_date"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:text="新增數量："
+                android:textColor="#626262"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/quantity_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_btn_decrease"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/item_quantity"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#626262"
+                android:textSize="72sp" />
+
+            <ImageView
+                android:id="@+id/quantity_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_btn_increase"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/container_quantity"
+            android:id="@+id/container_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:text="儲存區域："
+                android:textColor="#626262"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/vegetable_crisper_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_food_save_position"
+                android:paddingBottom="12dp"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:paddingTop="12dp"
+                android:stateListAnimator="@null"
+                android:text="蔬果室"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/fridge_section_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:background="@drawable/bg_food_save_position"
+                android:elevation="0px"
+                android:paddingBottom="12dp"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:paddingTop="12dp"
+                android:stateListAnimator="@null"
+                android:text="冷藏室"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/freezer_section_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:background="@drawable/bg_food_save_position"
+                android:elevation="0px"
+                android:paddingBottom="12dp"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:paddingTop="12dp"
+                android:stateListAnimator="@null"
+                android:text="冷凍室"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_explain_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_position"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="47dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_nutrition"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="營養成份"
+                android:textColor="#000000"
+                android:textSize="48sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/container_explain_content"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_below="@+id/container_explain_title"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:id="@+id/text_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="#000000"
+                android:textSize="28sp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_explain_content"
+            android:layout_marginStart="166dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_green_text"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_explain_content"
+            android:layout_marginEnd="166dp"
+            android:background="@drawable/btn_green_solid_rounded"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="確定"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

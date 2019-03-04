@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/ic_account_back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="124dp"
+        android:text="正在建檔..."
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="116dp"
+        android:layout_gravity="end"
+        app:cpb_background_progressbar_color="#00000000"
+        app:cpb_progressbar_color="#ffffffff"
+        app:cpb_progressbar_width="5dp"/>
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="97dp"
+        android:layout_marginTop="124dp"
+        android:layout_gravity="end"
+        android:textColor="@android:color/white"
+        android:textSize="58sp" />
+
+    <FrameLayout
+        android:layout_width="966dp"
+        android:layout_height="966dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="477dp">
+
+
+        <com.guo.android_extend.widget.CameraSurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="1dp" />
+
+        <com.guo.android_extend.widget.CameraGLSurfaceView
+            android:id="@+id/gl_surfaceView"
+            android:layout_width="966dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="966dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_member_scan_frame"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+</FrameLayout>

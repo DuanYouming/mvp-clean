@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7C7C7"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="410dp"
+        android:text="添加食品標籤"
+        android:textColor="@android:color/white"
+        android:textSize="64sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="79dp"
+        android:text="請選擇添加方式"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+
+    <FrameLayout
+        android:layout_width="672dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="147dp">
+
+
+        <LinearLayout
+            android:id="@+id/scan"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="283dp"
+                android:layout_height="283dp"
+                android:background="@drawable/bg_add_scan"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:text="條碼輸入"
+                android:textColor="@android:color/white"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/key_in"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="283dp"
+                android:layout_height="283dp"
+                android:background="@drawable/bg_add_keyin"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:text="手動輸入"
+                android:textColor="@android:color/white"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

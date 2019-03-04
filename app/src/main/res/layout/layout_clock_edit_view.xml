@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:numberStringPicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/alarm_add_edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:text="新建鬧鐘"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="900dp"
+        android:layout_height="1094dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="289dp"
+        android:background="@drawable/bg_item_background">
+
+        <LinearLayout
+            android:id="@+id/view_12_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <com.foxconn.bandon.custom.NumberStringPicker
+                android:id="@+id/alarm_midnight"
+                android:layout_width="141dp"
+                android:layout_height="246dp"
+                numberStringPicker:focusTextSize="36"
+                numberStringPicker:hideBoundaryLine="false"
+                numberStringPicker:textSize="36" />
+
+            <com.foxconn.bandon.custom.NumberStringPicker
+                android:id="@+id/alarm_hour"
+                android:layout_width="205dp"
+                android:layout_height="246dp"
+                numberStringPicker:focusTextSize="36"
+                numberStringPicker:hideBoundaryLine="false"
+                numberStringPicker:textSize="36" />
+
+            <com.foxconn.bandon.custom.NumberStringPicker
+                android:id="@+id/alarm_min"
+                android:layout_width="141dp"
+                android:layout_height="246dp"
+                numberStringPicker:focusTextSize="36"
+                numberStringPicker:hideBoundaryLine="false"
+                numberStringPicker:textSize="36" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_24_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:orientation="horizontal">
+
+            <com.foxconn.bandon.custom.NumberStringPicker
+                android:id="@+id/alarm_hour_24"
+                android:layout_width="147dp"
+                android:layout_height="252dp"
+                numberStringPicker:focusTextSize="36"
+                numberStringPicker:hideBoundaryLine="false"
+                numberStringPicker:textSize="36" />
+
+            <com.foxconn.bandon.custom.NumberStringPicker
+                android:id="@+id/alarm_min_24"
+                android:layout_width="147dp"
+                android:layout_height="252dp"
+                numberStringPicker:focusTextSize="36"
+                numberStringPicker:hideBoundaryLine="false"
+                numberStringPicker:textSize="36" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="365dp">
+
+            <RadioButton
+                android:id="@+id/text_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:button="@null"
+                android:text="重複"
+                android:textColor="@color/clock_repeat_button"
+                android:textSize="40sp" />
+
+            <RadioButton
+                android:id="@+id/text_not_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:button="@null"
+                android:text="不重複"
+                android:textColor="@color/clock_repeat_button"
+                android:textSize="40sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="841dp"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="432dp"
+            android:background="#979797" />
+
+
+        <LinearLayout
+            android:layout_width="770dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="477dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sun_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_sun"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/mon_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_mon"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tue_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_tue"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/wed_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_wed"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/thu_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_thu"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fri_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_fri"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sat_day"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/alarm_repeat_not_select_background"
+                android:gravity="center"
+                android:text="@string/alarm_period_sat"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="609dp"
+            android:text="@string/alarm_tag"
+            android:textColor="#4A4A4A"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_width="841dp"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="672dp"
+            android:background="#979797" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="671dp"
+            android:layout_height="109dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="719dp"
+            android:background="@drawable/alarm_edit_background"
+            android:hint="@string/alarm_alias_limit"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingEnd="28dp"
+            android:paddingStart="28dp"
+            android:textColorHint="#9B9B9B"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="260dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/add_layout"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/btn_green_border_rounded"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@drawable/btn_green_text"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="260dp"
+        android:layout_height="92dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/add_layout"
+        android:layout_marginEnd="237dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/btn_green_solid_rounded"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+</RelativeLayout>

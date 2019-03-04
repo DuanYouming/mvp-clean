@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/alarm_add_edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:text="編輯圖片"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+
+        <com.foxconn.bandon.cropper.CropImageView
+            android:id="@+id/CropImageView"
+            android:layout_below="@+id/alarm_add_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/content_padding"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+
+
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="260dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/CropImageView"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/btn_green_border_rounded"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@drawable/btn_green_text"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="260dp"
+        android:layout_height="92dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/CropImageView"
+        android:layout_marginEnd="237dp"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/btn_green_solid_rounded"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+</RelativeLayout>

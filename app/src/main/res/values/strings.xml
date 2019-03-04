@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">bandon</string>
+    <string name="weather_info_title">今天天气</string>
+    <string name="weather_info_sub">气温</string>
+    <string name="weather_info_unit">摄氏度</string>
+    <string name="temp_unit">℃</string>
+    <string name="text_door_open_time">冷藏室門開關次數</string>
+    <string name="times_unit">次</string>
+    <!--ice automatic-->
+    <string name="ice_maker_off">關閉</string>
+    <string name="ice_maker_auto">自動</string>
+    <string name="ice_maker_express">急速</string>
+    <string name="ice_maker_duration_normal_normal">約120分</string>
+    <string name="ice_maker_duration_normal_large">約210分</string>
+    <string name="ice_maker_duration_express_normal">約80分</string>
+    <string name="ice_maker_duration_express_large">約120分</string>
+    <string name="disabled_during_cooling_heat">熱物冷凍中\n無法使用</string>
+    <string name="disabled_during_cooling_express">急速冷凍中\n無法使用</string>
+    <string name="disabled_during_ice_make_express">急速製冰中\n無法使用</string>
+
+    <!-- temperature -->
+    <string name="temperature_title">温度设定</string>
+    <string name="fridge_room">冷藏室</string>
+    <string name="freezer_room">冷凍室</string>
+    <string name="varying_room">變溫室</string>
+    <string name="temperature_description">對冷藏室、冷凍室温度進行調節时，\n往滑右加強冷度，往左滑减弱冷度。</string>
+    <!-- cleaner -->
+    <string name="cleaner_title">清淨除臭</string>
+    <string name="cleaner_off">關閉</string>
+    <string name="cleaner_normal">通常</string>
+    <string name="cleaner_extreme">強脫臭</string>
+    <string name="cleaner_normal_description">推薦平時使用此運轉模式。</string>
+    <string name="cleaner_extreme_description">有令人不舒服氣味時，連續進行\n約5小時的除臭運轉。</string>
+
+    <!-- power saving -->
+    <string name="power_saving_title">智慧節電</string>
+    <string name="power_saving_off">停止</string>
+    <string name="power_saving_on">節電中</string>
+
+    <!-- frozen -->
+    <string name="frozen_title">冷凍操作</string>
+    <string name="frozen_normal">通常</string>
+    <string name="frozen_fresh">新鮮</string>
+    <string name="frozen_express">急速</string>
+    <string name="frozen_heat">熱物</string>
+    <string name="frozen_fresh_description">在冷凍室(下)內能夠以更低溫保存食品，\n保持鮮度和食物鮮味成分。</string>
+    <string name="frozen_express_description">為了避免美味流失而進行急速冷凍。</string>
+    <string name="frozen_heat_description">冷凍熱的食品(60°C以下)。</string>
+
+    <!--wifi detail-->
+    <string name="wi_fi_title">WI-FI</string>
+    <string name="wifi_detail_login_edit_hint">請輸入密碼</string>
+    <string name="wifi_detail_login_button_cancel">取消</string>
+    <string name="wifi_detail_login_button_join">加入</string>
+    <string name="wifi_detail_login_eight_password">密碼至少包含8個字符</string>
+    <string name="wifi_detail_login_process_password">正在加入…</string>
+
+    <!--clock settings-->
+    <string name="alarm_period_sun">週日</string>
+    <string name="alarm_period_mon">週一</string>
+    <string name="alarm_period_tue">週二</string>
+    <string name="alarm_period_wed">週三</string>
+    <string name="alarm_period_thu">週四</string>
+    <string name="alarm_period_fri">週五</string>
+    <string name="alarm_period_sat">週六</string>
+    <string name="alarm_tag">標籤</string>
+    <string name="alarm_alias_limit">請輸入10個字以內名稱</string>
+    <string name="alarm_am">上午</string>
+    <string name="alarm_pm">下午</string>
+    <string name="alarm_only_one_time">只響一次</string>
+
+    <!-- date/time settings -->
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+    <string name="system_upgrade_title">系統更新</string>
+
+    <string name="fd_error">FD初始化失败</string>
+    <string name="fr_error">FR初始化失败</string>
+    <string name="no_feature">人脸特征无法检测，请换一张图片</string>
+    <string name="register_success">註冊成功！</string>
+    <string name="register_already">用戶已經註冊！</string>
+    <string name="delete_success">刪除成功！</string>
+    <string name="delete_failure">刪除失敗！</string>
+    <string name="user_name_not_empty">請輸入用戶名！</string>
+    <string name="name_new_user">新用戶</string>
+    <string name="user_name">用戶名:</string>
+    <string name="checking">正在驗證中…</string>
+    <string name="check_success">   驗證成功</string>
+    <string name="check_fail">   驗證失敗</string>
+    <string name="cue_words_fail">欢迎来到Bandon!即将進入待机界面…</string>
+    <string name="cue_words_success">欢迎回来!即将进入Bandon…</string>
+
+    <string name="label_cat_vegetable">蔬菜類</string>
+    <string name="label_cat_fruit">水果類</string>
+    <string name="label_cat_poultry">禽肉蛋品</string>
+    <string name="label_cat_meat">豬牛羊肉</string>
+    <string name="label_cat_seafood">海鮮水產</string>
+    <string name="label_cat_beverage">飲品類</string>
+    <string name="label_cat_spice">調味料</string>
+    <string name="label_cat_frozen">冷凍食品</string>
+    <string name="label_cat_search_hit">快速搜尋食品標籤</string>
+
+    <string name="label_tag_vegetable">蔬菜类</string>
+    <string name="label_tag_fruit">水果类</string>
+    <string name="label_tag_poultry">禽肉蛋品</string>
+    <string name="label_tag_meat">猪牛羊肉</string>
+    <string name="label_tag_seafood">海鲜水产</string>
+    <string name="label_tag_beverage">饮品类</string>
+    <string name="label_tag_spice">调味料</string>
+    <string name="label_tag_frozen">冷冻食品</string>
+
+    <string name="store_area_vegetable">蔬果室</string>
+    <string name="store_area_fridge">冷藏室</string>
+    <string name="store_area_freezer">冷凍室</string>
+    <string name="de">的</string>
+    <string name="comma">，</string>
+    <string name="full_stop">。</string>
+    <string name="stalled_in_days">后過期</string>
+    <string name="hint_food">請盡快食用</string>
+    <string name="expiration_today">今天過期</string>
+    <string name="food_label_expired_none">請輸入保質期限</string>
+    <string name="out_of_date">已過期</string>
+    <string name="remain">剩</string>
+    <string name="expiration_day">天</string>
+    <string name="expiration_month">個月</string>
+    <string name="expiration_year">年</string>
+    <string name="btn_update">更新</string>
+    <string name="btn_delete">刪除</string>
+
+    <!-- recipe -->
+    <string name="recipe_recommend">猜你喜歡</string>
+    <string name="recipe_meals">每日三餐</string>
+    <string name="recipe_food_category">菜餚分類</string>
+    <string name="recipe_sharp">夏普專區</string>
+    <string name="recipe_more">查看更多 ></string>
+
+    <string-array name="custom_weekdays">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+
+</resources>

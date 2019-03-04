@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="782dp"
+        android:layout_height="356dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="653dp"
+        android:background="@drawable/bg_memo_clear_confirm">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="87dp"
+            android:src="@drawable/ic_memo_clear"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="92dp"
+            android:text="確定刪除留言板內容？"
+            android:textColor="#4A4A4A"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp">
+
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="248dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_green_text"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="248dp"
+            android:background="@drawable/btn_green_solid_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="確定"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

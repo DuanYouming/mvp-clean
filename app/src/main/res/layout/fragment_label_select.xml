@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.foxconn.bandon.custom.SearchEditView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="66dp" />
+
+    <LinearLayout
+        android:id="@+id/select_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="240dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="從分類選擇 -"
+            android:textColor="#323232"
+            android:textSize="36sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="640dp"
+            android:layout_marginTop="54dp"
+            android:overScrollMode="never" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_sub_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/load_failure_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="加载数据失败！"
+                android:visibility="gone"
+                android:textSize="36sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="240dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/no_result_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="100dp"
+                android:text="查無對應標籤"
+                android:textSize="36sp" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

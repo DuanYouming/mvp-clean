@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_fridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="@string/fridge_room"
+        android:textColor="#e6333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_fridge_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/text_fridge"
+        android:text="8℃"
+        android:textColor="#e64AABFE"
+        android:textSize="24sp" />
+
+    <com.foxconn.bandon.custom.SeekBar
+        android:id="@+id/fridge_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp" />
+
+    <TextView
+        android:id="@+id/text_freezer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="214dp"
+        android:text="@string/freezer_room"
+        android:textColor="#e6333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_freezer_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="214dp"
+        android:layout_toEndOf="@+id/text_freezer"
+        android:text="-23℃"
+        android:textColor="#e64AABFE"
+        android:textSize="24sp" />
+
+    <com.foxconn.bandon.custom.SeekBar
+        android:id="@+id/freezer_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="262dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="385dp"
+        android:text="@string/varying_room"
+        android:textColor="#e6333333"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="430dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radio_unfreeze"
+            android:layout_width="212dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/temp_btn_checked"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:text="解凍"
+            android:textColor="@color/temp_btn_checked"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:layout_width="212dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/temp_btn_checked"
+            android:button="@null"
+            android:gravity="center"
+            android:text="冷藏"
+            android:textColor="@color/temp_btn_checked"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:gravity="center"
+            android:checked="true"
+            android:text="約1~3℃"
+            android:textColor="#CACACA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            android:text="約0~2℃"
+            android:textColor="#CACACA"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:text="@string/temperature_description"
+        android:textColor="#5c5c5c"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/ic_account_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="家庭成員"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/btn_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="55dp"
+            android:text="管理"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="267dp" />
+
+    <FrameLayout
+        android:id="@+id/delete_member_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="417dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="190dp"
+            android:background="@drawable/btn_green_border_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_green_text"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="190dp"
+            android:background="@drawable/btn_green_solid_rounded"
+            android:gravity="center"
+            android:paddingBottom="21dp"
+            android:paddingLeft="94dp"
+            android:paddingRight="94dp"
+            android:paddingTop="21dp"
+            android:text="刪除"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/category_item">
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="310dp"
+        android:layout_height="229dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="229dp"
+        android:gravity="center"
+        android:text="麵條"
+        android:textColor="#4A4A4A"
+        android:textSize="24sp" />
+</FrameLayout>

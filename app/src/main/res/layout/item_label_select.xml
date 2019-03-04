@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="320dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_food_label_category">
+
+        <ImageView
+            android:id="@+id/image_label_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cat_frozen_food"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:text="冷凍食品"
+        android:textSize="39sp" />
+
+</LinearLayout>

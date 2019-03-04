@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="722dp"
+        android:drawableStart="@drawable/ic_light"
+        android:textColor="@android:color/white"
+        android:textSize="52sp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="861dp"
+        android:gravity="start"
+        android:paddingLeft="210dp"
+        android:paddingRight="210dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="723dp"
+        android:background="@drawable/btn_green_solid_rounded"
+        android:gravity="center"
+        android:paddingBottom="21dp"
+        android:paddingLeft="76dp"
+        android:paddingRight="76dp"
+        android:paddingTop="21dp"
+        android:text="知道了"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+</FrameLayout>

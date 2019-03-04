@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/frozen_normal"
+            android:layout_width="192dp"
+            android:layout_height="92dp"
+            android:background="@drawable/btn_setting_switch"
+            android:gravity="center"
+            android:text="@string/frozen_normal"
+            android:textColor="@color/btn_setting_switch_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/frozen_fresh"
+            android:layout_width="192dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="74dp"
+            android:background="@drawable/btn_setting_switch"
+            android:gravity="center"
+            android:text="@string/frozen_fresh"
+            android:textColor="@color/btn_setting_switch_text"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="211dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/frozen_express"
+            android:layout_width="192dp"
+            android:layout_height="92dp"
+            android:background="@drawable/btn_setting_switch"
+            android:gravity="center"
+            android:text="@string/frozen_express"
+            android:textColor="@color/btn_setting_switch_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/frozen_heat"
+            android:layout_width="192dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="74dp"
+            android:background="@drawable/btn_setting_switch"
+            android:gravity="center"
+            android:text="@string/frozen_heat"
+            android:textColor="@color/btn_setting_switch_text"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="88dp"
+            android:background="@drawable/bg_setting_hit_title"
+            android:gravity="center"
+            android:text="@string/frozen_fresh"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/frozen_fresh_description"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="88dp"
+            android:background="@drawable/bg_setting_hit_title"
+            android:gravity="center"
+            android:text="@string/frozen_express"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/frozen_express_description"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="549dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="88dp"
+            android:background="@drawable/bg_setting_hit_title"
+            android:gravity="center"
+            android:text="@string/frozen_heat"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/frozen_heat_description"
+            android:textColor="#414042"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

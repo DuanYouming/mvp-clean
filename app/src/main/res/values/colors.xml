@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#4BC88C</color>
+
+    //cropper
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+
+    <item name="pen_black" type="color">#000000</item>
+    <item name="pen_grey" type="color">#4A4A4A</item>
+    <item name="pen_blue" type="color">#50AEE3</item>
+    <item name="pen_red" type="color">#D0021B</item>
+    <item name="pen_green" type="color">#1CB961</item>
+    <item name="single_option_view_text_normal" type="color">#9B9B9B</item>
+    <item name="single_option_view_text_disabled" type="color">#4d6c5662</item>
+
+    <item name="wifi_password_message" type="color">#4A4A4A</item>
+    <item name="wifi_password_error" type="color">#E6000D</item>
+
+    <item name="clock_repeat" type="color">#4BC78B</item>
+    <item name="clock_not_repeat" type="color">#9B9B9B</item>
+    <item name="clock_repeat_active" type="color">#FFFFFF</item>
+    <item name="clock_repeat_not_active" type="color">#4A4A4A</item>
+    <item name="setting_time_enable" type="color">#61AEEF</item>
+    <item name="setting_time_disable" type="color">#4A4A4A</item>
+    <item name="wifi_detail_login_password_hint" type="color">#C6C6C6</item>
+
+    <item name="inside_section_btn_default" type="color">#DB43464B</item>
+    <item name="inside_section_btn_selected" type="color">#E611181F</item>
+    <item name="inside_section_mask_background" type="color">#80444444</item>
+</resources>

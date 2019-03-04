@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".setting.SettingsFragment">
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/ice_automatic"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="153dp"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ice_maker_big_normal"
+        app:title="自動製冰" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/temperature_setting"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="153dp"
+        android:layout_toEndOf="@+id/ice_automatic"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_temp_high"
+        app:title="溫度設定" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/clean_deodorant"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="153dp"
+        android:layout_toEndOf="@+id/temperature_setting"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_clean_off"
+        app:title="清淨除臭" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/save_electricity"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/ice_automatic"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_eco_off"
+        app:title="智慧節電" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/frozen_operation"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/ice_automatic"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/save_electricity"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_freezer_high"
+        app:title="冷凍操作" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/voice_controller"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/ice_automatic"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/frozen_operation"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_sound"
+        app:title="聲音控制" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/wifi_setting"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="95dp"
+        android:layout_below="@+id/save_electricity"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_wifi"
+        app:title="WI-FI" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/clock_setting"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/wifi_setting"
+        android:layout_below="@+id/save_electricity"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_alarm"
+        app:title="鬧鐘" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/wall_paper"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/clock_setting"
+        android:layout_below="@+id/save_electricity"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_wallpaper"
+        app:title="壁紙" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/date_setting"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/wifi_setting"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_date_time"
+        app:title="時間/日期" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/user_setting"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/wifi_setting"
+        android:layout_toEndOf="@+id/date_setting"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_account"
+        app:title="用戶" />
+
+    <com.foxconn.bandon.setting.SettingIconView
+        android:id="@+id/system_upgrade"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/wifi_setting"
+        android:layout_toEndOf="@+id/user_setting"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_settings_card"
+        app:icon="@drawable/ic_system_upgrade"
+        app:title="系統升級" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <FrameLayout
+        android:id="@+id/header_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选择时区"
+            android:textSize="48sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/timezone_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/gmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="38sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="1300dp"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="#C6BEC2" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/ringtone_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/ringtone_text"
+        android:layout_width="853dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="113dp"
+        android:layout_centerVertical="true"
+        android:gravity="start|center_vertical"
+        android:textSize="38sp"
+        android:textColor="#4A4A4A"/>
+
+</RelativeLayout>

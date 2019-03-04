@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".standby.StandbyFragment">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallpaper"
+        tools:ignore="ContentDescription" />
+
+    <TextClock
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="86dp"
+        android:fontFamily="sans-serif-light"
+        android:format24Hour="HH:mm"
+        android:includeFontPadding="false"
+        android:textSize="180sp" />
+
+    <TextView
+        android:id="@+id/time_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="190dp"
+        android:textSize="64sp" />
+
+    <TextView
+        android:id="@+id/gtm_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="310dp"
+        android:ellipsize="none"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:textIsSelectable="true"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="1600dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="1610dp"
+        android:text="--℃"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/weather_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="1675dp"
+        android:text="-- / --"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/text_door_opened_hint"
+        android:text="@string/text_door_open_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="1675dp"
+        android:textSize="38sp" />
+    <TextView
+        android:id="@+id/text_door_opened_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="930dp"
+        android:layout_marginTop="1675dp"
+        android:textSize="42sp" />
+
+</FrameLayout>

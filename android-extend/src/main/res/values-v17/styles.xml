@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- custom check box 
+     for API LEVEL 17 + 
+     android:paddingLeft : button and text padding should be 0dp
+    -->
+
+</resources>
